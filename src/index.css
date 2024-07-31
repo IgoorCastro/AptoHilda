@@ -1,0 +1,52 @@
+/* Fonte padrão */
+@font-face {
+  font-family: 'MontserratAlternates-Thin';
+  src: url('../src/fonts/MontserratAlternates-Thin.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'MontserratAlternates-Regular';
+  src: url('../src/fonts/MontserratAlternates-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'MontserratAlternates-Light';
+  src: url('../src/fonts/MontserratAlternates-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'MontserratAlternates-ExtraLight';
+  src: url('../src/fonts/MontserratAlternates-ExtraLight.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'MontserratAlternates-SemiBold';
+  src: url('../src/fonts/MontserratAlternates-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'MontserratAlternates-Bold';
+  src: url('../src/fonts/MontserratAlternates-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'MontserratAlternates-ExtraBold';
+  src: url('../src/fonts/MontserratAlternates-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('../src/fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url('../src/fonts/Montserrat-Bold.ttf') format('truetype');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat-Regular';
+  scroll-behavior: smooth;
+}
