@@ -1,8 +1,8 @@
-{
+{  
+  "homepage": "https://igoorcastro.github.io/AptoHilda",
   "name": "apartamentohilda",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://IgoorCastro.github.io/AptoHilda",
   "dependencies": {
     "@emotion/react": "^11.13.0",
     "@emotion/styled": "^11.13.0",
