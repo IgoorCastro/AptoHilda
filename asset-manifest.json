@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/AptoHilda/static/css/main.3ff46d22.css",
+    "main.js": "/AptoHilda/static/js/main.22c98231.js",
+    "static/js/453.e92515b5.chunk.js": "/AptoHilda/static/js/453.e92515b5.chunk.js",
+    "static/media/apto7.JPG": "/AptoHilda/static/media/apto7.c59f0759724c35b11bf8.JPG",
+    "static/media/apto10.JPG": "/AptoHilda/static/media/apto10.914aef8269027309af8e.JPG",
+    "static/media/test9.jpg": "/AptoHilda/static/media/test9.1127ff10dc58d97c0cd8.jpg",
+    "static/media/festaAparecida.png": "/AptoHilda/static/media/festaAparecida.5b7f541986091096575a.png",
+    "static/media/leo202006.jpg": "/AptoHilda/static/media/leo202006.34da30743d14b3b7a139.jpg",
+    "static/media/apt8.jpg": "/AptoHilda/static/media/apt8.2336ca59f05c962507f0.jpg",
+    "static/media/MontserratAlternates-Regular.ttf": "/AptoHilda/static/media/MontserratAlternates-Regular.17043267bfe178ef8921.ttf",
+    "static/media/MontserratAlternates-ExtraBold.ttf": "/AptoHilda/static/media/MontserratAlternates-ExtraBold.be0c7493a022c76bed70.ttf",
+    "static/media/MontserratAlternates-Bold.ttf": "/AptoHilda/static/media/MontserratAlternates-Bold.104814841470be32b52f.ttf",
+    "static/media/MontserratAlternates-SemiBold.ttf": "/AptoHilda/static/media/MontserratAlternates-SemiBold.03445fae575ffe41b4a7.ttf",
+    "static/media/MontserratAlternates-ExtraLight.ttf": "/AptoHilda/static/media/MontserratAlternates-ExtraLight.9cdbca51b74ed2b1427e.ttf",
+    "static/media/MontserratAlternates-Light.ttf": "/AptoHilda/static/media/MontserratAlternates-Light.f108b24eefec66e65492.ttf",
+    "static/media/MontserratAlternates-Thin.ttf": "/AptoHilda/static/media/MontserratAlternates-Thin.6a470b5ae41d0628a50a.ttf",
+    "static/media/Montserrat-Bold.ttf": "/AptoHilda/static/media/Montserrat-Bold.50f0257aa1e905f4bfaf.ttf",
+    "static/media/Montserrat-Regular.ttf": "/AptoHilda/static/media/Montserrat-Regular.24785cc015b27a3e964b.ttf",
+    "static/media/whatsapp2.svg": "/AptoHilda/static/media/whatsapp2.30f178e57cf571318ed83be7fa146691.svg",
+    "static/media/airbnb2.svg": "/AptoHilda/static/media/airbnb2.254940b4df94efd1cd9ad37263f03570.svg",
+    "static/media/gmail2.svg": "/AptoHilda/static/media/gmail2.bc86209f94d6e7e47983164586dc4bba.svg",
+    "static/media/facebook2.svg": "/AptoHilda/static/media/facebook2.41554ddb59b1126b8be89760ad310b01.svg",
+    "static/media/booking2.svg": "/AptoHilda/static/media/booking2.82e1c2ea1695dfa36597c79de85eb4e0.svg",
+    "index.html": "/AptoHilda/index.html",
+    "main.3ff46d22.css.map": "/AptoHilda/static/css/main.3ff46d22.css.map",
+    "main.22c98231.js.map": "/AptoHilda/static/js/main.22c98231.js.map",
+    "453.e92515b5.chunk.js.map": "/AptoHilda/static/js/453.e92515b5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3ff46d22.css",
+    "static/js/main.22c98231.js"
+  ]
+}
