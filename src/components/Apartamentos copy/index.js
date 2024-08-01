@@ -4,10 +4,10 @@ import * as C from './styles';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from '../../styles/theme';
 
-import Label from '../../components/Label';
+import Label from '../Label';
 import Button from '@mui/material/Button';
 
-const AptoHome = ({ image, title, text, id, imgPosition = 'left' }) => {
+const Apartamentos = ({ image, title, text, id, imgPosition = 'left' }) => {
     return (
         <ThemeProvider theme={theme}>
 
@@ -55,4 +55,4 @@ const AptoHome = ({ image, title, text, id, imgPosition = 'left' }) => {
     )
 }
 
-export default AptoHome
+export default Apartamentos

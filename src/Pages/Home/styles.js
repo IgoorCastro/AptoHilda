@@ -542,6 +542,10 @@ export const LocalSection = styled.div`
     width: 100%;
     height: 80vh;
 
+    @media ${breakpoints.lg} {
+        height: 60vh;
+    }
+
     ${flexCenter};
     margin-bottom: 60px;
 

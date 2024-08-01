@@ -11,16 +11,18 @@ import whatsappIcon from '../../assets/icons/whatsapp2.svg';
 import gmailIcon from '../../assets/icons/gmail2.svg';
 import bookingIcon from '../../assets/icons/booking2.svg';
 
-import AptoHome  from '../../components/AptoHome';
 import EventCard from '../../components/EventCard';
 import Footer from '../../components/Footer';
 import Title from '../../components/Title';
 import Label from '../../components/Label';
 import Navbar from '../../components/Navbar';
 
+import useWindowWidth from '../../hooks/useWindowWidth';
+
 import Button from '@mui/material/Button';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from '../../styles/theme';
+import Apartamentos from '../../components/Apartamentos';
 
 
 const Home = () => {
@@ -53,7 +55,10 @@ const Home = () => {
         gmail: 'mailto:apartamentohilda@gmail.com',
         whatsapp: 'https://w.app/ApartamentoHilda'
     }
-    
+
+    const windowWidth = useWindowWidth();
+    const isSmallScreen = windowWidth < 1200;
+
 
     return (
         <ThemeProvider theme={theme}>
@@ -77,26 +82,73 @@ const Home = () => {
 
                 <C.AboutSection id='aboutUs'>
                     <div className='limiter'>
-                        <Title style={{ margin: '0 0 30px 0'}}>
+                        <Title style={{ margin: '0 0 30px 0' }}>
                             Sobre Nos
                         </Title>
                         <Label style={{ textAlign: 'center' }}>
-                            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.<br/><br/>
+                            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.<br /><br />
 
-                            Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.<br/><br/>
+                            Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.<br /><br />
 
                             Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
                         </Label>
                     </div>
                 </C.AboutSection>
 
-                <C.EspacosSection id='nossosEspacos'>
+                {/* <C.EspacosSection id='nossosEspacos'>
                     <div className='limiter'>
                         <Title>Nossos Espaços</Title>
                         
                         {aptoInfo.map((item, index) => {
-                            return <AptoHome key={index} id={item.id} image={item.image} title={item.title} text={item.text} imgPosition={item.imgPosition} />
+                            return <Apartamentos key={index} id={item.id} image={item.image} title={item.title} text={item.text} imgPosition={item.imgPosition} />
                         })}                    
+
+                    </div>
+                </C.EspacosSection> */}
+
+                <C.EspacosSection id='nossosEspacos'>
+                    <div className='limiter'>
+                        <Title>Nossos Espaços</Title>
+
+                        <Apartamentos.Root>
+                            <Apartamentos.Image image={aptoInfo[0].image} />
+                            <Apartamentos.About>
+                                <Apartamentos.Title>{aptoInfo[0].title}</Apartamentos.Title>
+                                <Apartamentos.Label>{aptoInfo[0].text}</Apartamentos.Label>
+                                <Apartamentos.Button text='Checar Disponibilidade' />
+                            </Apartamentos.About>
+                        </Apartamentos.Root>
+
+                        {isSmallScreen < 1200 ? (
+                            <Apartamentos.Root>                                
+                                <Apartamentos.Image image={aptoInfo[1].image} />
+                                <Apartamentos.About>
+                                    <Apartamentos.Title>{aptoInfo[1].title}</Apartamentos.Title>
+                                    <Apartamentos.Label>{aptoInfo[1].text}</Apartamentos.Label>
+                                    <Apartamentos.Button text='Checar Disponibilidade' />
+                                </Apartamentos.About>
+                            </Apartamentos.Root>
+                        ) : (
+                            <Apartamentos.Root>
+                                <Apartamentos.About>
+                                    <Apartamentos.Title>{aptoInfo[1].title}</Apartamentos.Title>
+                                    <Apartamentos.Label>{aptoInfo[1].text}</Apartamentos.Label>
+                                    <Apartamentos.Button text='Checar Disponibilidade' />
+                                </Apartamentos.About>
+                                <Apartamentos.Image image={aptoInfo[1].image} />
+                            </Apartamentos.Root>
+                        )}
+
+                        <Apartamentos.Root>
+                            <Apartamentos.Image image={aptoInfo[2].image} />
+                            <Apartamentos.About>
+                                <Apartamentos.Title>{aptoInfo[2].title}</Apartamentos.Title>
+                                <Apartamentos.Label>{aptoInfo[2].text}</Apartamentos.Label>
+                                <Apartamentos.Button text='Checar Disponibilidade' />
+                            </Apartamentos.About>
+                        </Apartamentos.Root>
+
+
 
                     </div>
                 </C.EspacosSection>
@@ -104,7 +156,7 @@ const Home = () => {
                 <C.EventosSection id='eventos'>
                     <div className='limiter'>
                         <Title style={{ margin: '0 0 30px 0' }}>Eventos Locais</Title>
-                        
+
                         <div className='card-container'>
                             <EventCard day='20' month='AGO' src={festaAparecida} title='Festa de Nossa Senhora Aparecida' label='Festa tradicional na cidade' />
                             <EventCard day='20' month='AGO' src={festaAparecida} title='Festa de Nossa Senhora Aparecida' label='Festa tradicional na cidade' />
@@ -114,33 +166,33 @@ const Home = () => {
                 </C.EventosSection>
 
                 <C.AnfitriaoSection id='anfitriao'>
-                <Title style={{ color: '#D9D9D9'}}>Anfitriões</Title>
+                    <Title style={{ color: '#D9D9D9' }}>Anfitriões</Title>
                     <div className='limiter'>
 
                         <div className='afintriaoContent'>
                             <img src={leo} alt='' />
                             <div>
                                 <h3>Léo</h3>
-                                <label>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. 
-                                Richard McClintock, a Latin professor at Hampden-Sydney.</label>
+                                <label>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                                    Richard McClintock, a Latin professor at Hampden-Sydney.</label>
                             </div>
-                        </div>   
+                        </div>
 
                         <div className='afintriaoContent'>
                             <div>
                                 <h3>Valéria</h3>
-                                <label>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. 
-                                Richard McClintock, a Latin professor at Hampden-Sydney.</label>
+                                <label>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                                    Richard McClintock, a Latin professor at Hampden-Sydney.</label>
                             </div>
                             <img src={apto7Img} alt='' />
-                        </div>                                           
+                        </div>
 
                     </div>
                 </C.AnfitriaoSection>
 
                 <C.ContatoSection id='contato'>
                     <div className='contato-container'>
-                        <Title style={{ margin: '0 0 30px 0'}} >Contatos</Title>
+                        <Title style={{ margin: '0 0 30px 0' }} >Contatos</Title>
                         <div className='icon-container'>
                             <img src={airbnbIcon} alt='' onClick={() => window.open(aptoLinks.airbnb, '_blank')} />
                             <img src={facebookIcon} alt='' onClick={() => window.open(aptoLinks.facebook, '_blank')} />

@@ -4,11 +4,11 @@ import Home from '../Pages/Home';
 
 const RoutesApp = () => {
   return (
-    <HashRouter>
+    <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
           </Routes>
-    </HashRouter>
+    </BrowserRouter>
   )
 }
 
