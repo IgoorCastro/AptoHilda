@@ -2,16 +2,17 @@ import React from 'react';
 import * as C from './styles';
 
 const Footer = () => {
+    // DIFERENÇA ENTRE AS ROTAS = HashRouter: href sem # do Id, ex.: href="main" -- BrowserRouter: href com #, ex.: href="#main"
     return (
         <>
             <C.Container>
                 <div className='limiter'>
                     <div>
-                        <C.Link href='#aboutUs'>Sobre Nos</C.Link>
-                        <C.Link href='#nossosEspacos'>Espaços</C.Link>
-                        <C.Link href='#eventos'>Eventos</C.Link>
-                        <C.Link href='#anfitriao'>Anfitriões</C.Link>
-                        <C.Link href='#contato'>Contato</C.Link>
+                        <C.Link href='aboutUs'>Sobre Nos</C.Link>
+                        <C.Link href='nossosEspacos'>Espaços</C.Link>
+                        <C.Link href='eventos'>Eventos</C.Link>
+                        <C.Link href='anfitriao'>Anfitriões</C.Link>
+                        <C.Link href='contato'>Contato</C.Link>
                     </div>
                     <div>
                         <C.Label>Rua Benedito Macedo, 680 <br />
@@ -21,9 +22,9 @@ const Footer = () => {
                         </C.Label>
                     </div>
                     <div>
-                        <C.Link href='#nossosEspacos'>10 Pessoas</C.Link>
-                        <C.Link href='#apto8'>8 Pessoas</C.Link>
-                        <C.Link href='#apto7'>7 Pessoas</C.Link>
+                        <C.Link href='nossosEspacos'>10 Pessoas</C.Link>
+                        <C.Link href='apto8'>8 Pessoas</C.Link>
+                        <C.Link href='apto7'>7 Pessoas</C.Link>
                     </div>
                 </div>
             </C.Container>

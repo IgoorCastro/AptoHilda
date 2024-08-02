@@ -6,8 +6,10 @@ export const Label = styled.label`
     font-family: Montserrat-Regular;
     font-size: 1.7rem;
     letter-spacing: -1px;
-    text-align: center;
+    text-align: start;
     width: 90%;
+
+    color: #D9D9D9;
 
     // border: 1px solid red;
 

@@ -10,6 +10,10 @@ const Container = styled.div`
     display: flex;
     margin-bottom: 60px;
 
+    &:last-child {
+        margin-bottom: 0;
+    }
+
     @media ${breakpoints.lg} {
         flex-direction: column;
         align-items: center;

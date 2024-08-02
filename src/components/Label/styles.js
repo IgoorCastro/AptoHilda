@@ -21,10 +21,10 @@ export const Label = styled.label`
     }
 
     @media ${breakpoints.sm} {
-        font-size: .9rem;
+        font-size: .95rem;
     }
 
     @media ${breakpoints.xs} {
-        font-size: .85rem;
+        font-size: .9rem;
     }
 `;

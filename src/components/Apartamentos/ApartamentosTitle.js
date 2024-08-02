@@ -10,6 +10,8 @@ export const ImageTitle = styled.h3`
     text-align: left;
     margin: 0 0 15px 0;
 
+    color: #D9D9D9;
+
     height: min-content;
 
     @media ${breakpoints.xl} {
@@ -36,10 +38,10 @@ export const ImageTitle = styled.h3`
     }
 `;
 
-export const ApartamentosTitle = ({ title }) => {
+export const ApartamentosTitle = ({ children }) => {
   return (
     <ImageTitle>
-        {title}
+        {children}
     </ImageTitle>
   )
 }

@@ -51,13 +51,13 @@ export const Container = styled.div`
 
     & > h4 {
         font-family: MontserratAlternates-Regular;
-        font-size: 2.3rem;
+        font-size: 2rem;
         letter-spacing: 1px;
         margin: 20px 0 10px;
         text-align: center;
 
         @media ${breakpoints.xl} {
-            font-size: 1.8rem;
+            font-size: 1.6rem;
         }
 
         @media ${breakpoints.lg} {
@@ -148,14 +148,14 @@ export const DateContainer = styled.div`
     & > .month {
         color: #FFFFFF;
         font-family: MontserratAlternates-ExtraLight;
-        font-size: 2.4rem;
+        font-size: 2.2rem;
 
         @media ${breakpoints.xl} {
-            font-size: 2.2rem;
+            font-size: 2rem;
         }
 
         @media ${breakpoints.lg} {
-            font-size: 2rem;
+            font-size: 1.8rem;
         }
 
         @media ${breakpoints.md} {

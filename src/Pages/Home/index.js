@@ -65,7 +65,7 @@ const Home = () => {
             <C.Container>
                 <Navbar />
 
-                <C.Main id='main' style={{ backgroundImage: `url(${imgTest})` }}>
+                <C.Main name='main' style={{ backgroundImage: `url(${imgTest})` }}>
                     <h3 className='first-text'>CONFORTO E ECONOMIA <br /> EM APARECIDA - SP</h3>
                     <h3 className='sec-text'>Conheça Nossos Espaços</h3>
                     <Button href='#nossosEspacos' variant="contained" color='orange' sx={{
@@ -80,7 +80,7 @@ const Home = () => {
                     }}>Agendar Agora</Button>
                 </C.Main>
 
-                <C.AboutSection id='aboutUs'>
+                <C.AboutSection name='aboutUs'>
                     <div className='limiter'>
                         <Title style={{ margin: '0 0 30px 0' }}>
                             Sobre Nos
@@ -106,9 +106,9 @@ const Home = () => {
                     </div>
                 </C.EspacosSection> */}
 
-                <C.EspacosSection id='nossosEspacos'>
+                <C.EspacosSection name='nossosEspacos'>
                     <div className='limiter'>
-                        <Title>Nossos Espaços</Title>
+                        <Title style={{ color: '#D9D9D9'}} >Nossos Espaços</Title>
 
                         <Apartamentos.Root>
                             <Apartamentos.Image image={aptoInfo[0].image} />
@@ -119,7 +119,7 @@ const Home = () => {
                             </Apartamentos.About>
                         </Apartamentos.Root>
 
-                        {isSmallScreen < 1200 ? (
+                        {isSmallScreen ? (
                             <Apartamentos.Root>                                
                                 <Apartamentos.Image image={aptoInfo[1].image} />
                                 <Apartamentos.About>
@@ -153,7 +153,7 @@ const Home = () => {
                     </div>
                 </C.EspacosSection>
 
-                <C.EventosSection id='eventos'>
+                <C.EventosSection name='eventos'>
                     <div className='limiter'>
                         <Title style={{ margin: '0 0 30px 0' }}>Eventos Locais</Title>
 
@@ -165,7 +165,7 @@ const Home = () => {
                     </div>
                 </C.EventosSection>
 
-                <C.AnfitriaoSection id='anfitriao'>
+                <C.AnfitriaoSection name='anfitriao'>
                     <Title style={{ color: '#D9D9D9' }}>Anfitriões</Title>
                     <div className='limiter'>
 
@@ -190,7 +190,7 @@ const Home = () => {
                     </div>
                 </C.AnfitriaoSection>
 
-                <C.ContatoSection id='contato'>
+                <C.ContatoSection name='contato'>
                     <div className='contato-container'>
                         <Title style={{ margin: '0 0 30px 0' }} >Contatos</Title>
                         <div className='icon-container'>

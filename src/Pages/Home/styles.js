@@ -199,6 +199,17 @@ export const AboutSection = styled.div`
     max-width: 100%;
     height: 60vh;
 
+    // border: 1px solid red;
+
+    @media (max-height: 420px) {
+        height: 120vh;
+    }
+
+    @media ${breakpoints.md} {
+        height: 80vh;
+        padding: 50px 0;    
+    }
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -211,40 +222,47 @@ export const AboutSection = styled.div`
         flex-direction: column;
         align-items: center;
     }
-
-    // border: 1px solid red;
 `;
 
 export const EspacosSection = styled.div`
     width: 100%;
+    padding: 100px 0;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @media ${breakpoints.md} {
+        padding: 50px 0;
+    }
+
+    background: #60574E;
+
+    ${flexCenter}
+
+    // border: 1px solid red;
 
     & > .limiter {
-        width: 80%;    
+        width: 80%; 
+        height: 100%;   
 
-        display: flex;
+        ${flexCenter}
         flex-direction: column;
-        justify-content: start;
-        align-items: center;
         
         // border: 1px solid blue;
     }
-    // border: 1px solid red;
 `;
 
 export const EventosSection = styled.div`
     width: 100%;
     height: 50vh;
 
-    padding: 60px 0;
+    padding: 100px 0;
+    
 
     @media ${breakpoints.md} {
         height: 70vh;
-        padding: 0;
+        padding: 50px 0;
+    }
+
+    @media (max-height: 420px) {
+        height: 200vh;
     }
 
     display: flex;
@@ -306,44 +324,55 @@ export const EventosSection = styled.div`
 export const AnfitriaoSection = styled.div`
     width: 100%;
     height: 100vh;
+    
+
+    padding: 100px 0;
+
+    @media ${breakpoints.md} {
+        padding: 50px 0;
+        max-height: 750px;
+    }
 
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
 
     background: #031021;
-    padding-bottom: 200px;
-
+    // padding-bottom: 200px;
     
     // border: 1px solid red;
 
-    @media ${breakpoints.xl} {
-        padding-bottom: 190px;
-    }
+    // @media (max-height: 420px) {
+    //     height: 200vh;
+    // }
 
-    @media ${breakpoints.lg} {
-        padding-bottom: 160px;
-    }
+    // @media ${breakpoints.xl} {
+    //     padding-bottom: 190px;
+    // }
 
-    @media (max-width: 1050px) {
-        padding-bottom: 160px;
-    }
+    // @media ${breakpoints.lg} {
+    //     padding-bottom: 160px;
+    // }
 
-    @media ${breakpoints.md} {
-        padding-bottom: 130px;
-    }
+    // @media (max-width: 1050px) {
+    //     padding-bottom: 160px;
+    // }
 
-    @media ${breakpoints.sm} {
-        padding-bottom: 100px;
-    }
+    // @media ${breakpoints.md} {
+    //     padding-bottom: 130px;
+    // }
 
-    @media ${breakpoints.xs} {
-        padding-bottom: 50px;
-    }
+    // @media ${breakpoints.sm} {
+    //     padding-bottom: 100px;
+    // }
+
+    // @media ${breakpoints.xs} {
+    //     padding-bottom: 50px;
+    // }
 
     & > .limiter {  
-        height: 80%;
+        height: 100%;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -355,32 +384,32 @@ export const AnfitriaoSection = styled.div`
         // border: 1px solid orange;  
 
         @media ${breakpoints.xl} {
-            width: 55%;;
+            width: 55%;
         }
 
         @media ${breakpoints.lg} {
-            width: 70%;;
+            width: 70%;
         }
 
         @media (max-width: 1050px) {
-            width: 90%;;
+            width: 90%;
         }
 
         @media ${breakpoints.md} {
-            width: 90%;;
+            width: 90%;
         }
 
         @media ${breakpoints.sm} {
-            width: 90%;;
+            width: 90%;
         }
 
         @media ${breakpoints.xs} {
-            width: 90%;;
+            width: 90%;
         }       
 
         & > .afintriaoContent {
             width: 100%;
-            height: 50%;
+            height: 48%;
             display: flex;
 
             // border: 1px solid blue;
@@ -485,14 +514,32 @@ export const ContatoSection = styled.div`
     width: 100%;
     height: 40vh;
 
+    padding: 100px 0;
+
     ${flexCenter};
+
+    // border: 1px solid red;
+
+    @media (max-height: 420px) {
+        height: 100vh;
+    }
+
+    @media ${breakpoints.md} {
+        padding: 50px 0;
+    }
 
     & > .contato-container {
         width: 80%;
         height: 100%;
 
+        // border: 1px solid red;
+
         ${flexCenter};
         flex-direction: column;
+
+         @media ${breakpoints.md} {
+            width: 100%;
+        }
         
         & > .icon-container {
             width: 100%;
@@ -542,12 +589,23 @@ export const LocalSection = styled.div`
     width: 100%;
     height: 80vh;
 
+    padding: 100px 0;
+
+    // border: 1px solid red;
+
     @media ${breakpoints.lg} {
         height: 60vh;
     }
 
+    @media ${breakpoints.md} {
+        padding: 50px 0;
+    }
+
+    @media (max-height: 420px) {
+        height: 150vh;
+    }
+
     ${flexCenter};
-    margin-bottom: 60px;
 
     & > .limiter {
         width: 60%;
@@ -571,6 +629,4 @@ export const LocalSection = styled.div`
 
         // border: 1px solid red;
     }
-
-    // border: 1px solid red;
 `;

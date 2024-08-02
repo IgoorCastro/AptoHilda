@@ -71,6 +71,8 @@ const Navbar = () => {
         fontFamily: 'Montserrat-Bold',
     };
 
+    // DIFERENÇA ENTRE AS ROTAS = HashRouter: href sem # do Id, ex.: href="main" -- BrowserRouter: href com #, ex.: href="#main"
+
     return (
         <ThemeProvider theme={theme}>
             <C.NavBar style={navbarStyle}>
@@ -91,7 +93,7 @@ const Navbar = () => {
                     <C.NavBarControl>
                         <div className='inLine-menu'>
                             <Box sx={{ display: 'flex', justifyContent: 'end', gap: '60px'}}>
-                                <Link href="#aboutUs" underline="hover" style={{ fontSize: '1.5rem', color: '#D9D9D9', display: 'flex', alignItems: 'center', whiteSpace: 'nowrap', fontFamily: 'Montserrat-Bold' }}>
+                                <Link href="aboutUs" underline="hover" style={{ fontSize: '1.5rem', color: '#D9D9D9', display: 'flex', alignItems: 'center', whiteSpace: 'nowrap', fontFamily: 'Montserrat-Bold' }}>
                                     {'SOBRE NOS'}
                                 </Link>
 
@@ -114,12 +116,12 @@ const Navbar = () => {
                                         'aria-labelledby': 'basic-button-1',
                                     }}
                                 >
-                                    <MenuItem onClick={handleClose1}><C.DropMenuLink href='#nossosEspacos'>10 PESSOAS</C.DropMenuLink></MenuItem>
-                                    <MenuItem onClick={handleClose1}><C.DropMenuLink href='#apto8'>8 PESSOAS</C.DropMenuLink></MenuItem>
-                                    <MenuItem onClick={handleClose1}><C.DropMenuLink href='#apto7'>7 PESSOAS</C.DropMenuLink></MenuItem>
+                                    <MenuItem onClick={handleClose1}><C.DropMenuLink href='nossosEspacos'>10 PESSOAS</C.DropMenuLink></MenuItem>
+                                    <MenuItem onClick={handleClose1}><C.DropMenuLink href='apto8'>8 PESSOAS</C.DropMenuLink></MenuItem>
+                                    <MenuItem onClick={handleClose1}><C.DropMenuLink href='apto7'>7 PESSOAS</C.DropMenuLink></MenuItem>
                                 </Menu>
 
-                                <Link href="#contato" underline="hover" style={{ fontSize: '1.5rem', color: '#D9D9D9', display: 'flex', alignItems: 'center', fontFamily: 'Montserrat-Bold' }}>
+                                <Link href="contato" underline="hover" style={{ fontSize: '1.5rem', color: '#D9D9D9', display: 'flex', alignItems: 'center', fontFamily: 'Montserrat-Bold' }}>
                                     {'CONTATO'}
                                 </Link>
                             </Box>
@@ -157,7 +159,7 @@ const Navbar = () => {
                                     PaperProps={{ style: { position: 'absolute' } }} // Ajuste do posicionamento
                                 >
                                     <MenuItem style={{ color: '#1E1E1E', fontFamily: 'Montserrat-Regular' }} onClick={handleClose2}>
-                                        <C.DropMenuLink href='#aboutUs' >SOBRE NOS</C.DropMenuLink>
+                                        <C.DropMenuLink href='aboutUs' >SOBRE NOS</C.DropMenuLink>
                                     </MenuItem>
 
                                     <Button
@@ -182,12 +184,12 @@ const Navbar = () => {
                                         }}
                                         PaperProps={{ style: { position: 'absolute' } }} // Ajuste do posicionamento
                                     >
-                                        <MenuItem onClick={handleClose1} ><C.DropMenuLink href='#nossosEspacos'>10 PESSOAS</C.DropMenuLink></MenuItem>
-                                        <MenuItem onClick={handleClose1} ><C.DropMenuLink href='#apto8'>8 PESSOAS</C.DropMenuLink></MenuItem>
-                                        <MenuItem onClick={handleClose1} ><C.DropMenuLink href='#apto7'>7 PESSOAS</C.DropMenuLink></MenuItem>
+                                        <MenuItem onClick={handleClose1} ><C.DropMenuLink href='nossosEspacos'>10 PESSOAS</C.DropMenuLink></MenuItem>
+                                        <MenuItem onClick={handleClose1} ><C.DropMenuLink href='apto8'>8 PESSOAS</C.DropMenuLink></MenuItem>
+                                        <MenuItem onClick={handleClose1} ><C.DropMenuLink href='apto7'>7 PESSOAS</C.DropMenuLink></MenuItem>
                                     </Menu>
 
-                                    <MenuItem style={{ fontFamily: 'Montserrat-Regular' }} onClick={handleClose2}><C.DropMenuLink href='#contato'>CONTATO</C.DropMenuLink></MenuItem>
+                                    <MenuItem style={{ fontFamily: 'Montserrat-Regular' }} onClick={handleClose2}><C.DropMenuLink href='contato'>CONTATO</C.DropMenuLink></MenuItem>
                                 </Menu>
                             </div>
                         </div>

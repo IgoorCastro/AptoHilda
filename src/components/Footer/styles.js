@@ -10,17 +10,25 @@ const flexCenter = `
 export const Container = styled.div`
     widith: 100%;
     height: 30vh;
-
-    background: #031021;
     
     ${flexCenter};    
     flex-direction: column;
 
+    background: #031021;
+
+    // border: 1px solid red;
+
+    @media (max-height: 420px) {
+        height: 60vh;
+    }
+
     & > .limiter {
         width: 100%;
-        height: 100%;        
+        height: 100%; 
+
+        // border: 1px solid red;
         
-        margin: 35px 0;
+        // margin: 35px 0;
 
         ${flexCenter};
         justiy-content: space-between;
