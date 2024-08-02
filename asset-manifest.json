@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/AptoHilda/static/css/main.3ff46d22.css",
-    "main.js": "/AptoHilda/static/js/main.be0bb536.js",
+    "main.js": "/AptoHilda/static/js/main.c8f3d866.js",
     "static/js/453.e92515b5.chunk.js": "/AptoHilda/static/js/453.e92515b5.chunk.js",
     "static/media/apto7.JPG": "/AptoHilda/static/media/apto7.c59f0759724c35b11bf8.JPG",
     "static/media/apto10.JPG": "/AptoHilda/static/media/apto10.914aef8269027309af8e.JPG",
@@ -25,11 +25,11 @@
     "static/media/booking2.svg": "/AptoHilda/static/media/booking2.82e1c2ea1695dfa36597c79de85eb4e0.svg",
     "index.html": "/AptoHilda/index.html",
     "main.3ff46d22.css.map": "/AptoHilda/static/css/main.3ff46d22.css.map",
-    "main.be0bb536.js.map": "/AptoHilda/static/js/main.be0bb536.js.map",
+    "main.c8f3d866.js.map": "/AptoHilda/static/js/main.c8f3d866.js.map",
     "453.e92515b5.chunk.js.map": "/AptoHilda/static/js/453.e92515b5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3ff46d22.css",
-    "static/js/main.be0bb536.js"
+    "static/js/main.c8f3d866.js"
   ]
 }
