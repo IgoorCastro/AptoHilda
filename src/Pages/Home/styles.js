@@ -202,7 +202,7 @@ export const AboutSection = styled.div`
     // border: 1px solid red;
 
     @media (max-height: 420px) {
-        height: 120vh;
+        height: 180vh;
     }
 
     @media ${breakpoints.md} {
